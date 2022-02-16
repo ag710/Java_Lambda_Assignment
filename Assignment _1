@@ -1,0 +1,16 @@
+import java.util.Scanner;
+interface Maximum{  
+    int max(int a,int b);  
+}  
+  
+public class LambdaPracticeAssignment1{  
+    public static void main(String[] args) {  
+        Scanner sc=new Scanner(System.in);
+        Maximum obj=(val1,val2)->(Math.max(val1,val2));  
+        int value1,value2;
+        value1=sc.nextInt();
+        value2=sc.nextInt();
+        System.out.println("Maximum of two integers: "+ obj.max(value1,value2));  
+          
+    }  
+} 
