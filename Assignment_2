@@ -1,0 +1,14 @@
+import java.util.Scanner;
+interface NextEven{  
+    long even(long value1);  
+}  
+  
+public class LambdaExpressionExample5{  
+    public static void main(String[] args) {  
+        Scanner sc=new Scanner(System.in);
+        NextEven obj=(val1)->((val1%2==0)?val1+2:val1+1);  
+        long value1= sc.nextLong();
+        System.out.println("Next Even number is: "+ obj.even(value1));  
+          
+    }  
+}  
